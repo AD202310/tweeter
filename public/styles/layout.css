@@ -15,14 +15,17 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: #f7f5f0;
+  background-color: #b0c8ec;
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
- /*justify-content:
- 
+main {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: #b0c8ec;
+}

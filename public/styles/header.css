@@ -1,10 +1,16 @@
 header {
   display: flex;
-  height: 540px;
+  height: 800px;
   width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #b8a7a7;
+  color: #fffefb;
+  background-color: rgb(18, 107, 107);
   background-image: url("https://www.transparenttextures.com/patterns/squares.png");
+}
+
+.name {
+  display: flex;
+  justify-content: center;
 }

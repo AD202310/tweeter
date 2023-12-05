@@ -9,5 +9,9 @@ nav {
   justify-content: space-between;
 }
 
-
-/* <span> within the <nav> uses Bungee as its default font-family */
+#logo {
+  display: flex; 
+  align-items: center;
+  font-family:'Bungee', sans-serif;
+  margin: 1.5em; 
+}
