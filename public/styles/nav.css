@@ -1,0 +1,11 @@
+nav {
+  display:flex;
+  color: #FFFFFF;
+  background-color: #4056A1;
+  font-family: 'Source Sans 3', sans-serif;
+  height: 120px;
+  margin: 1.5em;
+}
+
+
+/* <span> within the <nav> uses Bungee as its default font-family */
