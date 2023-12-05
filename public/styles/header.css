@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  height: 540px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b8a7a7;
+  background-image: url("https://www.transparenttextures.com/patterns/squares.png");
+}
