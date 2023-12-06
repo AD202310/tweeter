@@ -5,9 +5,9 @@ $(document).ready(function() {
       const $output = $('output')
       $output.text(textLength);
       if (textLength < 0) {
-          $output.addClass('invalid')
+          $output.addClass('red-text');
       } else {
-          $output.removeClass('invalid')
+          $output.removeClass('red-text');
       }
   });
 });

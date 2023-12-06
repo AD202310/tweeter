@@ -18,7 +18,7 @@
     line-height: 1;
   }
 
-  button {
+  .tweet-button {
     display: flex; 
     align-items: center;
     font-family:'Bungee', sans-serif;
@@ -32,16 +32,12 @@
     width: 75%; 
   }
 
-  #tweet-text {
-    border-style: hidden;
-    border-bottom: 5px solid  #030303; 
-    background-color: #ffffff;
-    resize: none; 
-    font-weight: 600; 
-    line-height: 1;
-    }
-
     .counter {
+      display: flex;
+      width: 50px;
+      height: 0px;
+      align-items: flex-start;
       font-family:'Bungee', sans-serif;
       float: right; 
+      flex-direction: column-reverse;
     }
