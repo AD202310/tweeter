@@ -28,10 +28,17 @@ const createTweetElement = (data) => {
     </article>
     `;
   return newTweet;
+
 };
 
+const renderTweets = (data) => {
+  for (const tweet of data) {
+    const newTweet = createTweetElement(tweet);
+    $( '#tweets-container' ).append(newTweet);
+  }
+};
 
-const tweetData = {
+const data = {
   "user": {
     "name": "Newton",
     "avatars": "https://i.imgur.com/73hZDYK.png",
@@ -44,7 +51,10 @@ const tweetData = {
 };
 
 $( document ).ready(function() {
-const $tweet = createTweetElement(tweetData);
-console.log($tweet);
-$('#tweets-container').append($tweet);
+renderTweets(data);
+$( '.new-tweet form' ).submit(function(event) {
+  event.preventDefault();
+  const tweetData = $( this ).serialize();
+  $.post('/tweets/', tweetData);
+});
 });
