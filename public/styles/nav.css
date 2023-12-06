@@ -37,3 +37,7 @@ nav {
   color: red;
 }
 
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
