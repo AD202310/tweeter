@@ -1,17 +1,16 @@
-.header-name {
-  display: flex;
-  height: 460px;
+header.profile {
+  height: 400px;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fffefb;
-  background-color: rgb(18, 107, 107);
-  background-image: url("https://www.transparenttextures.com/patterns/squares.png");
+  background-color: #007599;
+  background-image: url('../images/swirl.png');
+  color: #FFFFFF;
+  margin: 120px 0 0 0 ;
 }
 
-.name {
-  display: flex;
-  justify-content: center;
+header h2 {
+  font-weight: 500;
+}
+
+header b {
   font-weight: 700;
 }

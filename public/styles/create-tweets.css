@@ -1,7 +1,7 @@
 article.tweet {
   padding: 0.5em;
   border: 2px solid black;
-  margin: 40px .1em 2em;
+  margin: 0 .1em 2em;
   transition: box-shadow 0.25s;
 }
 
@@ -9,9 +9,33 @@ article.tweet:hover {
   box-shadow: 9px 4px 2px 1px #36363b;
 }
 
+article.tweet header {
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: 0 0 1em;
+}
+
+article.tweet header div {
+  align-items: center;
+
+}
+
+div.profile-pic-username i {
+  margin-right: 0.5em
+}
+
+div.profile-pic-username img {
+  height: 45px;
+  margin-right: 0.25em;
+}
+
 .handle {
   color: #06113b;
-  font-size: medium;
+}
+
+p.handle {
+  margin: 0;
 }
 
 section.tweet-content p {
@@ -35,12 +59,18 @@ article.tweet footer p {
   font-size: 0.6em;
 }
 
+article.tweet footer div {
+  width: 55px;
+  display: flex;
+  justify-content: space-around;
+}
+
 article.tweet footer div i {
   font-size: 20px;
-  color: #ffffff;
+  color: #007599;
   cursor: pointer;
 }
 
 article.tweet footer div i:hover {
-  color: #4056a1;
+  color: #d83518;
 }

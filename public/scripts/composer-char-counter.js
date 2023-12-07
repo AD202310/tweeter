@@ -1,13 +1,16 @@
+const maxChar = 140;
+
 $(document).ready(function() {
-  $('textarea').keyup(function () {
-    const maxLength = 140;
-      const textLength = maxLength - $(this).val().length;
-      const $output = $('output')
-      $output.text(textLength);
-      if (textLength < 0) {
-          $output.addClass('red-text');
-      } else {
-          $output.removeClass('red-text');
-      }
+  $( '#tweet-text' ).keyup(function() {
+    const charCounter = $( this ).parent().children( 'div' ).children( '.counter' );
+    const charAmount = $( this ).val().length;
+    const remainingChar = maxChar - charAmount;
+    charCounter.val(remainingChar);
+    if (charCounter.val() < 0) {
+      charCounter.addClass('text-red');
+    }
+    if (charCounter.val() > -1) {
+      charCounter.removeClass('text-red');
+    }
   });
 });
