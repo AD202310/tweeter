@@ -20,6 +20,7 @@ section.tweet-content p {
   margin: 0 0.5em;
   padding-bottom: 0.5em;
   border-bottom: 2px solid black;
+  word-wrap: break-word;
 }
 
 article.tweet footer {

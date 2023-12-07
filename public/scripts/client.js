@@ -47,6 +47,15 @@ $( document ).ready(function() {
 $( '.new-tweet form' ).submit(function(event) {
   event.preventDefault();
   const tweetData = $( this ).serialize();
+  const charCount = Number($('output.counter').val());
+  if (charCount === 140) {
+    alert("Empty tweet!");
+    return;
+  }
+  if (charCount < 0) {
+    alert("More than 140 characters!");
+    return;
+  }
   $.post('/tweets/', tweetData).then( function() {
     loadTweets();
   })
