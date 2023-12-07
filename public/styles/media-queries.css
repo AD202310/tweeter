@@ -10,7 +10,7 @@
     max-height: 700px;
     margin-top: 8em;
     margin-left: 2em;
-    background-color: #5d80f7;
+    background-color: #007599;
   }
   div.profile-img-wrapper {
     padding: 4em;
@@ -32,7 +32,7 @@
   }
 }
 
-@media screen and (min-width: 2500px) {
+@media screen and (min-width: 2046px) {
   body {
     margin: 120px 10% 0;
   }
@@ -46,7 +46,7 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .blue {
     background-color: #4057a100;
   }
