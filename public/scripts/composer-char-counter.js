@@ -1,3 +1,5 @@
+//Functionality for counting characters
+
 const maxChar = 140;
 
 $(document).ready(function() {

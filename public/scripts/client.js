@@ -1,8 +1,4 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
+//Functionality for creating a tweet (and error if < min or > max)
 
 const maxNumberOfChar = 140;
 const minNumberOfChar = 0;
@@ -10,27 +6,27 @@ const minNumberOfChar = 0;
 
 const createTweetElement = (data) => {
   let newTweet = `
-                  <article class="tweet">
-                    <header class="flex-container-row">
-                      <div class="profile-pic-username flex-container-row">
-                        <img src="${data.user.avatars}"/>
-                        <p>${data.user.name}</p>
-                      </div>
-                      <p class="handle">${data.user.handle}</p>
-                    </header>
-                    <section class="tweet-content">
-                      <p>${escape(data.content.text)}</p>
-                    </section>
-                    <footer>
-                      <p class="time-created">${timeago.format(data.created_at)}</p>
-                      <div>
-                        <i class="fas fa-flag"></i>
-                        <i class="fas fa-retweet"></i>
-                        <i class="fas fa-heart"></i>
-                      </div>
-                    </footer>
-                  </article>
-                  `;
+    <article class="tweet">
+      <header class="flex-container-row">
+        <div class="profile-pic-username flex-container-row">
+          <img src="${data.user.avatars}"/>
+          <p>${data.user.name}</p>
+        </div>
+        <p class="handle">${data.user.handle}</p>
+      </header>
+      <section class="tweet-content">
+        <p>${escape(data.content.text)}</p>
+      </section>
+      <footer>
+        <p class="time-created">${timeago.format(data.created_at)}</p>
+        <div>
+          <i class="fas fa-flag"></i>
+          <i class="fas fa-retweet"></i>
+          <i class="fas fa-heart"></i>
+        </div>
+      </footer>
+    </article>
+    `;
   return newTweet;
 };
 
@@ -108,5 +104,4 @@ $( document ).ready(function() {
       closeNewTweetError();
     });
   });
-
 });
