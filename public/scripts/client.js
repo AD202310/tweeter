@@ -4,6 +4,10 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+const maxNumberOfChar = 140;
+const minNumberOfChar = 0;
+
+
 const createTweetElement = (data) => {
   let newTweet = `
                   <article class="tweet">
@@ -53,11 +57,11 @@ const loadNewTweet = () => {
   $.get('/tweets').then((data) => {
     renderTweet(data[data.length - 1]);
     $( '#tweet-text' ).val('');
-    $( 'output.counter' ).val(140);
+    $( 'output.counter' ).val(maxNumberOfChar);
   });
 };
 
-const escape = function (str) {
+const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
@@ -91,11 +95,11 @@ $( document ).ready(function() {
     const tweetData = $( this ).serialize();
     const charCount = Number($( 'output.counter' ).val());
     
-    if (charCount === 140) {
+    if (charCount === maxNumberOfChar) {
       newTweetError('Please enter a tweet!');
       return;
-    } else if (charCount < 0) {
-      newTweetError('More than 140 characters!!')
+    } else if (charCount < minNumberOfChar) {
+      newTweetError('It is more than 140 characters!!');
       return;
     }
 
