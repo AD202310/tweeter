@@ -15,11 +15,11 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product (screenshots)
 
-!["Screenshot-1"] (https://github.com/AD202310/tweeter/blob/master/docs/tweet-box1.png?raw=true)
+!["Screenshot-1"](https://github.com/AD202310/tweeter/blob/master/docs/tweet-box1.png?raw=true)
 
-!["Screenshot-2"] (https://github.com/AD202310/tweeter/blob/master/docs/tweet-box2.png?raw=true)
+!["Screenshot-2"](https://github.com/AD202310/tweeter/blob/master/docs/tweet-box2.png?raw=true)
 
-!["Screenshot-3"] (https://github.com/AD202310/tweeter/blob/master/docs/tweet-box3.png?raw=true)
+!["Screenshot-3"](https://github.com/AD202310/tweeter/blob/master/docs/tweet-box3.png?raw=true)
 
 
 ## Dependencies
